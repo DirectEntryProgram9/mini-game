@@ -43,12 +43,12 @@ const animate = () => {
 };
 
 addEventListener('keydown', ({ key }) => {
-    if (key === "e") {
+    if (key === "ArrowRight") {
         player.classList.remove('turn');
         index = 0;
         dx = 10;
     }
-    else if (key === "q") {
+    else if (key === "ArrowLeft") {
         player.classList.add('turn');
         index = 0;
         dx = -10;
@@ -56,7 +56,7 @@ addEventListener('keydown', ({ key }) => {
 });
 
 addEventListener('keyup', ({ key }) => {
-    if (key === "e" || key === "q") {
+    if (key === "ArrowRight" || key === "ArrowLeft") {
         dx = 0;
     }
 });
