@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 85vh;
+    background-color: wheat;
+    background-image: url(../img/wintertileset/png/BG/BG.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+#player {
+    background-image: url(../img/templerun/Idle__000.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 700px;      
+}
+
+#ground {
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    bottom: 0;
+    background-image: url(../img/wintertileset/png/Tiles/2.png);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.turn {
+    transform: rotateY(180deg);
+}
